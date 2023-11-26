@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500&display=swap');
+/* 
+cores do site
+#171717 - azul
+#5F00BA - roxo 
+
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: DM Sans;
+    background-color: #171717;
+    color: white;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #171717;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* Adicione ao seu arquivo styles.css */
+.navbar a img {
+    width: 30px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento à direita do ícone */
+    margin-left: 40px;
+    margin-top: 0;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar a:hover {
+    color: #00a0ff;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-image {
+
+    margin-left: 10px; /* Adicione um espaçamento entre o nome e a imagem */
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 4%;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 4%;
+    color: rgb(130, 130, 130);
+}
+
+/* Adicione ao final do seu arquivo styles.css */
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.cv-button,
+.linkedin-button {
+    display: inline-block;
+    padding: 17px 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+    width: 200px;
+
+}
+
+.cv-button {
+    background-color: #007acc;
+}
+
+.linkedin-button {
+    background-color: transparent;
+    border: solid 1px #007acc;
+}
+
+.cv-button:hover,
+.linkedin-button:hover {
+    background-color: #005a9649;
+}
+
+
+/* Adicione isso ao final do seu arquivo styles.css */
+
+#sobre {
+    background-color: #171717;
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #3498db;
+}
+
+#sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#sobre a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#sobre a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+
+/* Adicione no final do seu arquivo styles.css */
+
+.about-info {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #aaa; /* Cor de texto mais suave (pode manter essa cor ou escolher outra) */
+    justify-content: space-between;
+}
+
+/* Adicione essa regra para mudar a cor do texto dentro da classe about-info */
+.about-info p {
+    color: #aaa; /* Nova cor para o texto dentro da classe about-info */
+}
+
+/* Adicione essa regra para mudar a cor dos links dentro da classe about-info */
+.about-info a {
+    color: #aaa !important; /* !important para garantir que esta regra tenha prioridade */
+    text-decoration: none; /* Remover sublinhado padrão dos links */
+    font-weight: bold; /* Deixar o texto em negrito para destacar */
+}
+
+/* Adicione uma regra para alterar a cor dos links quando houver hover (opcional) */
+.about-info a:hover {
+    color: #007ACC !important; /* Nova cor quando o mouse estiver sobre o link */
+}
+
+
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste as dimensões da grade */
+    grid-gap: 30px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px; /* Defina a altura desejada dos projetos */
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    
+}
+
+.project:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.1); /* Valor menor que 1 para escurecer a imagem */
+    
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project:hover .project-info {
+    opacity: 1;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Adicione ao final do seu arquivo styles.css */
+
+.project-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.github-button,
+.preview-button {
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.github-button {
+    background-color: #007acc;
+}
+
+.preview-button {
+    border: solid 1px #007acc;
+    background-color: transparent;
+}
+
+.github-button:hover, .preview-button:hover{
+    background-color: #005a9649;
+}
+
+
+
+/* Adicione ao seu arquivo styles.css */
+
+/* Estilos para a seção de Habilidades */
+#skills {
+    background-color: #171717;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #777;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #313131;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #5F00BA, #44CF6C, #00a0ff);
+    border-radius: 5px;
+    position: relative;
+    transition: width 1s ease; /* Adicione uma transição suave */
+}
+
+.skill:hover .progress {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para a seção de Contato */
+#contato {
+    background-color: #171717;
+    color: #fff;
+}
+
+#contato h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00a0ff;
+    background-color: #444;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    background-color: #00a0ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #007acc;
+}
+
+
+.footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* Barra de rolagem principal (para navegadores que suportam WebKit) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Cor da barra de rolagem principal (para navegadores que suportam WebKit) */
+::-webkit-scrollbar-thumb {
+    background-color: #007acc;
+    border-radius: 50px;
+}
+
+/* Cor de fundo da barra de rolagem (para navegadores que suportam WebKit) */
+::-webkit-scrollbar-track {
+    background-color: #171717;
+}
+
+/* Barra de rolagem principal */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #007acc     #171717;
+    border-radius: 10px;
+}
+
+#scrollToTopBtn {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00a0ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+
+
+/* Estilos para telas menores, como dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    .navbar a {
+        font-size: 8px;
+    }
+
+    .hero h1 {
+        font-size: 8px;
+    }
+
+    .hero p {
+        font-size: 8px;
+    }
+    .container {
+        max-width: 100%; /* Alteração para tornar o conteúdo responsivo */
+    }
+    
+    .navbar {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar a img {
+        width: 50px;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .hero {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        padding: 0 20px;
+    }
+    
+    .hero h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    /* Adicione mais estilos conforme necessário */
+}
+
