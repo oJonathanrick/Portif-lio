@@ -60,6 +60,14 @@ body {
     color: #00a0ff;
 }
 
+.navbar ul li{
+    display: inline;
+    list-style: none;
+    padding-left: 25px;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+}
+
 .hero {
     height: 80vh;
     display: flex;
@@ -81,6 +89,10 @@ body {
 .hero h1 {
     font-size: 50px;
     margin-bottom: 4%;
+}
+
+.hero-content h1 span{
+    color: #F9004D;
 }
 
 .hero p {
