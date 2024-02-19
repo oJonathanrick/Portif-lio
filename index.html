@@ -23,34 +23,54 @@
                     <li><a href="#contato">Fale comigo</a></li>
                 </ul>
             </div>
+            <div class="toggle-switch">
+                <input type="checkbox" class="checkbox" id="toggle-btn">
+                <label class="label" for="toggle-btn">
+                    <i id="moon" class="fa-solid fa-moon"></i>
+                    <i id="sun" class="fa-regular fa-sun"></i>
+                    <div class="bola"></div>
+                </label>
+            </div>
         </div>
 
         <!-- Conteúdo principal -->
         <div class="hero" id="home">
             <div class="hero-content">
                 <h1>Olá, me chamo <br> Jonathan Henrique</h1>
-                <p>Eu crio sites, aplicativos e sistemas</p>
+                <div class="digitando">Eu crio sites, aplicativos e sistemas</div>
 
-                <div class="hero-buttons">
+                <!-- <div class="hero-buttons"> 
                     <a href="#" class="cv-button">Download CV</a>
                     <a href="https://www.linkedin.com/in/jonathan-henrique1/" target="_blank"
                         class="linkedin-button">LinkedIn</a>
+                </div> -->
+
+
+                <div class="redes_sociais">
+                    <a href="https://github.com/ojonathanrick" target="_blank" class="github"><i class="fa-brands fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/jonathan-henrique1/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a>
                 </div>
+
+
             </div>
             <div class="hero-image">
-                <img src="img/Group 194 (2).svg">
+                <img src="img/Programming-amico (1).svg">
+                <a href="https://storyset.com/online">Online illustrations by Storyset</a>
+                <a href="https://storyset.com/technology">Technology illustrations by Storyset</a>
             </div>
         </div>
 
         <!-- Sessão Sobre Mim -->
         <div class="section" id="sobre">
             <h2>Sobre mim</h2>
-            <p>Jonathan Henrique, 22 anos, programador apaixonado por tecnologia.<br>
-                Habilidades em HTML, CSS, Python e JavaScript, com experiência em React Native. <br>Comprometido,
-                proativo e em busca constante de aprimoramento.
-                <br>Disponível para colaborar em projetos desafiadores. <br>
-            </p>
-
+            <div class="profile">
+                <img src="img/profile.png" alt="">
+                <p>Jonathan Henrique, 22 anos, programador apaixonado por tecnologia.<br>
+                    Habilidades em HTML, CSS, Python e JavaScript, com experiência em React Native. <br>Comprometido,
+                    proativo e em busca constante de aprimoramento.
+                    <br>Disponível para colaborar em projetos desafiadores. <br>
+                </p>
+            </div>
             <!-- Novas informações -->
             <div class="about-info">
                 <p><strong>Nome Completo:</strong> <br>
@@ -80,7 +100,7 @@
             <h2>Projetos</h2>
             <div class="projects">
 
-                <!-- Projeto 1 --> 
+                <!-- Projeto 1 -->
                 <div class="project">
                     <img src="img/Projeto1.png" alt="Projeto 1">
                     <div class="project-info">
@@ -96,7 +116,7 @@
                     </div>
                 </div>
 
-                <!-- Projeto 2 --> 
+                <!-- Projeto 2 -->
                 <div class="project">
                     <img src="img/Projeto2.png" alt="Projeto 2">
                     <div class="project-info">
@@ -112,7 +132,7 @@
                     </div>
                 </div>
 
-                <!-- Projeto 3 --> 
+                <!-- Projeto 3 -->
                 <div class="project">
                     <img src="img/projeto3.png" alt="Projeto 3">
                     <div class="project-info">
@@ -125,22 +145,23 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Projeto 4 --> 
+
+                <!-- Projeto 4 -->
                 <div class="project">
-                    <img src="img/Em-Breve.jpg" alt="Projeto 4">
+                    <img src="img/Projeto4.png" alt="Relogio diital">
                     <div class="project-info">
-                        <h3>Projeto 4</h3>
-                        <p>Uma descrição breve do projeto 4</p>
+                        <h3>Relogio Digital 4</h3>
+                        <p>um app simples criado com HTML, CSS e JavaScript.
+                            Apesar de ser uma aplicação simples é mais para mostrar minhas habilidades</p>
                         <!-- Adicione os botões -->
                         <div class="project-buttons">
-                            <a href="#" class="github-button">GitHub</a>
-                            <a href="#" class="preview-button">Preview</a>
+                            <a href="https://github.com/oJonathanrick/Relogio-Digital" target="_blank" class="github-button">GitHub</a>
+                            <a href="relogio-digital-one-swart.vercel.app" target="_blank" class="preview-button">Preview</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Projeto 5 --> 
+                <!-- Projeto 5 -->
                 <div class="project">
                     <img src="img/Em-Breve.jpg" alt="Projeto 5">
                     <div class="project-info">
@@ -154,7 +175,7 @@
                     </div>
                 </div>
 
-                <!-- Projeto  --> 
+                <!-- Projeto  -->
                 <div class="project">
                     <img src="img/Em-Breve.jpg" alt="Projeto 6">
                     <div class="project-info">
@@ -170,41 +191,8 @@
             </div>
         </div>
 
-        <!-- Adicione mais habilidades ao seu arquivo HTML -->
-        <div class="section" id="skills">
-            <h2>Habilidades</h2>
-            <div class="skills">
-                <!-- Habilidade 1 -->
-                <div class="skill">
-                    <h3>HTML5</h3>
-                    <div class="progress-bar">
-                        <div class="progress-bg"></div>
-                        <div class="progress" data-label="90%"></div>
-                    </div>
-                </div>
-                <!-- Habilidade 2 -->
-                <div class="skill">
-                    <h3>CSS3</h3>
-                    <div class="progress-bar">
-                        <div class="progress-bg"></div>
-                        <div class="progress" data-label="85%"></div>
-                    </div>
-                </div>
-                <!-- Habilidade 3 -->
-                <div class="skill">
-                    <h3>JavaScript</h3>
-                    <div class="progress-bar">
-                        <div class="progress-bg"></div>
-                        <div class="progress" data-label="80%"></div>
-                    </div>
-                </div>
-                <!-- Adicione mais habilidades conforme necessário -->
-            </div>
-        </div>
 
-
-
-        <!-- Sessão Contato --> 
+        <!-- Sessão Contato -->
         <div class="section" id="contato">
             <h2>Fale comigo</h2>
             <p>Entre em contato.</p>
@@ -219,7 +207,7 @@
     </div>
     <button id="scrollToTopBtn">&#9650; Topo</button>
     <div class="footer">
-        <p>© Jonathan Henrique - All rights reserved
+        <p>© Jonathan Henrique - All rights reserved - <Strong class="site">Este site esta em construção</Strong>
     </div>
     <script src="script.js"></script>
 
