@@ -32,7 +32,7 @@ function showHobbyInfo(hobby) {
 
 
 const dark_color = ['#171717', '#eeeedd', '#111111', '#333333', '#444444', '#aaaaaa' ]
-const light_color = ['#eeeedd', '#171717', '#c9c0c0', '#cccccc', '#bbbbbb', '#555555']
+const light_color = ['#e8e8e8', '#171717', '#c9c0c0', '#cccccc', '#bbbbbb', '#555555']
 
 document.querySelector('#toggle-btn').addEventListener('click', function () {
     if (this.checked) {

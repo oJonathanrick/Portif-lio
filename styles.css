@@ -46,11 +46,11 @@ body {
 
 /* Adicione ao seu arquivo styles.css */
 .navbar a img {
-    width: 30px; /* Ajuste conforme necessário */
+    width: 50px; /* Ajuste conforme necessário */
     height: auto; /* Mantém a proporção da imagem */
     margin-right: 10px; /* Espaçamento à direita do ícone */
     margin-left: 40px;
-    margin-top: 14px;
+    margin-top: 25px;
 }
 
 
