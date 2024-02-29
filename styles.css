@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500&display=swap');
-/* 
-cores do site
-#171717 - azul
-#5F00BA - roxo 
-*/
 
-:root{
+/* Cores do site */
+:root {
     --primary: #171717;
     --secundary: #fff;
     --tertiary: #111111;
@@ -25,11 +21,10 @@ html {
 }
 
 body {
-    font-family: DM Sans;
+    font-family: 'DM Sans', sans-serif;
     background-color: var(--primary);
     color: var(--secundary);
 }
-
 
 .container {
     max-width: 1200px;
@@ -44,15 +39,13 @@ body {
     color: #fff;
 }
 
-/* Adicione ao seu arquivo styles.css */
 .navbar a img {
-    width: 50px; /* Ajuste conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-right: 10px; /* Espaçamento à direita do ícone */
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
     margin-left: 40px;
     margin-top: 25px;
 }
-
 
 .navbar a {
     color: var(--secundary);
@@ -65,7 +58,7 @@ body {
     color: #00a0ff;
 }
 
-.navbar ul li{
+.navbar ul li {
     display: inline;
     list-style: none;
     padding-left: 25px;
@@ -73,13 +66,12 @@ body {
     font-family: "DM Sans", sans-serif;
 }
 
-
-.checkbox{
+.checkbox {
     opacity: 0;
     position: absolute;
 }
 
-.label{
+.label {
     background-color: var(--secundary);
     border-radius: 50px;
     cursor: pointer;
@@ -93,7 +85,7 @@ body {
     transform: scale(1.5);
 }
 
-.bola{
+.bola {
     background-color: var(--primary);
     border-radius: 50%;
     position: absolute;
@@ -105,14 +97,13 @@ body {
     transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .bola{
+.checkbox:checked + .label .bola {
     transform: translateX(24px);
 }
 
-#sun{
-color: var(--primary);
+#sun {
+    color: var(--primary);
 }
-
 
 .hero {
     height: 80vh;
@@ -130,11 +121,11 @@ color: var(--primary);
 .hero-image {
     display: flex;
     flex-direction: column;
-    margin-left: 10px; /* Adicione um espaçamento entre o nome e a imagem */
+    margin-left: 10px;
     width: 425px;
 }
 
-.hero-image a{
+.hero-image a {
     text-align: right;
     color: inherit;
     text-decoration: none;
@@ -145,8 +136,8 @@ color: var(--primary);
     font-size: 50px;
 }
 
-.hero-content h1 span{
-    color: #F9004D;
+.hero-content h1 span {
+    color: #f9004d;
 }
 
 .hero p {
@@ -155,7 +146,7 @@ color: var(--primary);
     color: rgb(130, 130, 130);
 }
 
-.digitando{
+.digitando {
     width: 265px;
     animation: digitando 3s steps(32), blink .4s step-end infinite alternate;
     white-space: nowrap;
@@ -164,84 +155,39 @@ color: var(--primary);
     margin-bottom: 4%;
 }
 
-@keyframes digitando{
-    from{
+@keyframes digitando {
+    from {
         width: 0;
     }
 }
 
-@keyframes blink{
-    40%{
+@keyframes blink {
+    40% {
         border-color: #007acc;
     }
 }
 
-
-.redes_sociais{
+.redes_sociais {
     display: flex;
-    
-
 }
 
-.redes_sociais a{
+.redes_sociais a {
     color: var(--secundary);
     padding-left: 15px;
 }
 
-
-.linkedin:hover{
-    color: #0A66C2;
+.linkedin:hover {
+    color: #0a66c2;
 }
 
-.github:hover{
+.github:hover {
     color: black;
 }
-
-
-
-/* Adicione ao final do seu arquivo styles.css */
-
-.hero-buttons {
-    margin-top: 20px;
-}
-
-.cv-button,
-.linkedin-button {
-    display: inline-block;
-    padding: 17px 5px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-right: 15px;
-    transition: background-color 0.3s;
-    width: 200px;
-
-}
-
-.cv-button {
-    background-color: #007acc;
-}
-
-.linkedin-button {
-    background-color: transparent;
-    border: solid 1px #007acc;
-}
-
-.cv-button:hover,
-.linkedin-button:hover {
-    background-color: #005a9649;
-}
-
-
-/* Adicione isso ao final do seu arquivo styles.css */
-
 
 .profile {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui os itens igualmente na linha */
+    justify-content: space-between;
 }
 
 .profile img {
@@ -252,78 +198,12 @@ color: var(--primary);
 }
 
 .profile p {
-    width: calc(100% - 350px - 20spx); /* Calcula a largura do parágrafo (100% - largura da imagem - margem entre os itens) */
-    /* Adicione outros estilos conforme necessário */
+    width: calc(100% - 350px - 20px);
 }
 
-
-.site{
-    color: #F9004D;
+.site {
+    color: #f9004d;
 }
-
-
-#sobre {
-    color: var(--secundary);
-    padding: 80px 0;
-    text-align: center;
-    height: 100vh;
-}
-
-#sobre h2 {
-    font-size: 50px;
-    margin-bottom: 30px;
-    color: #3498db;
-}
-#sobre p {
-    font-size: 20px;
-    line-height: 1.6;
-    text-align: center;
-    justify-content: center;
-}
-
-
-#sobre a {
-    color: #3498db;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-#sobre a:hover {
-    color: #2980b9;
-    text-decoration: underline;
-}
-
-
-/* Adicione no final do seu arquivo styles.css */
-
-.about-info {
-    display: flex;
-    flex-direction: row;
-    padding-top: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
-    color: var(--secundary); /* Cor de texto mais suave (pode manter essa cor ou escolher outra) */
-    justify-content: space-between;
-}
-
-/* Adicione essa regra para mudar a cor do texto dentro da classe about-info */
-.about-info p {
-    color: var(--secundary); /* Nova cor para o texto dentro da classe about-info */
-}
-
-/* Adicione essa regra para mudar a cor dos links dentro da classe about-info */
-.about-info a {
-    color: var(--secundary) !important; /* !important para garantir que esta regra tenha prioridade */
-    text-decoration: none; /* Remover sublinhado padrão dos links */
-    font-weight: bold; /* Deixar o texto em negrito para destacar */
-}
-
-/* Adicione uma regra para alterar a cor dos links quando houver hover (opcional) */
-.about-info a:hover {
-    color: #007ACC !important; /* Nova cor quando o mouse estiver sobre o link */
-}
-
 
 .section {
     padding: 30px 0;
@@ -342,7 +222,7 @@ color: var(--primary);
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste as dimensões da grade */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
 }
 
@@ -350,7 +230,7 @@ color: var(--primary);
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    height: 250px; /* Defina a altura desejada dos projetos */
+    height: 250px;
 }
 
 .project img {
@@ -358,13 +238,11 @@ color: var(--primary);
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
-    
 }
 
 .project:hover img {
     transform: scale(1.1);
-    filter: brightness(0.1); /* Valor menor que 1 para escurecer a imagem */
-    
+    filter: brightness(0.1);
 }
 
 .project-info {
@@ -393,7 +271,6 @@ color: var(--primary);
     color: #ccc;
 }
 
-/* Botões da descrição do projeto */
 .project-buttons {
     display: flex;
     justify-content: space-around;
@@ -420,62 +297,35 @@ color: var(--primary);
     background-color: transparent;
 }
 
-.github-button:hover, .preview-button:hover{
+.github-button:hover,
+.preview-button:hover {
     background-color: #005a9649;
 }
 
-
-/* Skills */
-.skills{
+.about-info {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 90vh;
-    
-}
-
-.skills h2{
-    font-size: 36px;
-    padding-bottom: 4%;
-}
-
-
-.icones_habilidades{
-    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: var(--secundary);
     justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    
 }
 
-.icones_habilidades a{
-    color: inherit;
+.about-info p {
+    color: var(--secundary);
 }
 
-
-
-.html:hover{
-    color: #FF5722;
-    transition: 0.3s ease-in-out;
+.about-info a {
+    color: var(--secundary) !important;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.css:hover{
-    color: #2196F3;
-    transition: 0.3s ease-in-out;
+.about-info a:hover {
+    color: #007acc !important;
 }
 
-.js:hover{
-    color: #F7E025;
-    transition: 0.3s ease-in-out;
-}
-
-.react:hover{
-    color: #08ACDA;
-    transition: 0.3s ease-in-out;
-}
-
-
-/* Estilos para a seção de Contato */
 #contato {
     background-color: var(--primary);
     color: var(--secundary);
@@ -543,8 +393,6 @@ color: var(--primary);
     background-color: #007acc;
 }
 
-
-
 .footer {
     background-color: var(--tertiary);
     padding: 20px;
@@ -556,27 +404,23 @@ color: var(--primary);
     font-size: 16px;
 }
 
-
-/* Barra de rolagem principal (para navegadores que suportam WebKit) */
+/* Barra de rolagem principal */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
-/* Cor da barra de rolagem principal (para navegadores que suportam WebKit) */
 ::-webkit-scrollbar-thumb {
     background-color: #007acc;
     border-radius: 50px;
 }
 
-/* Cor de fundo da barra de rolagem (para navegadores que suportam WebKit) */
 ::-webkit-scrollbar-track {
     background-color: #171717;
 }
 
-/* Barra de rolagem principal */
 body {
     scrollbar-width: thin;
-    scrollbar-color: #007acc     #171717;
+    scrollbar-color: #007acc #171717;
     border-radius: 10px;
 }
 
@@ -593,10 +437,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
-/* Estilos para telas menores, como dispositivos móveis */
 @media only screen and (max-width: 600px) {
     .navbar a {
         font-size: 8px;
@@ -609,24 +449,25 @@ body {
     .hero p {
         font-size: 8px;
     }
+
     .container {
-        max-width: 100%; /* Alteração para tornar o conteúdo responsivo */
+        max-width: 100%;
     }
-    
+
     .navbar {
         padding: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .navbar a img {
         width: 50px;
         height: auto;
         margin-left: 20px;
         margin-right: 20px;
     }
-    
+
     .hero {
         height: auto;
         display: flex;
@@ -635,20 +476,18 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .hero-content {
         padding: 0 20px;
     }
-    
+
     .hero h1 {
         font-size: 20px;
         margin-bottom: 20px;
     }
-    
+
     .hero p {
         font-size: 12px;
         margin-bottom: 15px;
     }
-    /* Adicione mais estilos conforme necessário */
 }
-
