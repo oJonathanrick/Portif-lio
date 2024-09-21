@@ -53,3 +53,4 @@ document.querySelector('#toggle-btn').addEventListener('click', function () {
         document.body.style.setProperty('--senary', dark_color[5])
     }
 })
+
