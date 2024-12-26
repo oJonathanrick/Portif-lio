@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="img/Group 194.svg" type="image/x-icon">
+    <link rel="icon" href="img/Jonathan.svg" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>Jonathan Henrique</title>
 </head>
@@ -185,12 +185,13 @@
             <h2>Fale comigo </h2>
             <p id="not">(Not Working)</p>
             <p>Entre em contato.</p>
-            <div class="contact-form">
-                <input type="text" name="name" placeholder="Nome">
-                <input type="email" name="email" placeholder="Email">
+            <form class="contact-form" action="https://formsubmit.co/jonathan369852@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
                 <textarea name="message" placeholder="Mensagem"></textarea>
+                <input type="hidden" name="_next" value="https://portif-lio-pi.vercel.app/thanks.html">
                 <button type="submit">Enviar</button>
-            </div>
+           </form>
         </div>
 
     </div>
