@@ -326,10 +326,6 @@ body {
     color: #007acc !important;
 }
 
-.not{
-    font-size: 10px;
-}
-
 #contato {
     background-color: var(--primary);
     color: var(--secundary);

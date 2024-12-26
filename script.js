@@ -20,16 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function showHobbyInfo(hobby) {
-    // Esconde todas as informações de hobbies
-    document.querySelectorAll('.hobby-info').forEach(info => {
-        info.classList.remove('show-info');
-    });
-
-    // Mostra a informação específica do hobby clicado
-    document.getElementById(`${hobby}-info`).classList.add('show-info');
-}
-
 
 const dark_color = ['#171717', '#eeeedd', '#111111', '#333333', '#444444', '#aaaaaa' ]
 const light_color = ['#e8e8e8', '#171717', '#c9c0c0', '#cccccc', '#bbbbbb', '#555555']
