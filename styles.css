@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap');
 
 /* Cores do site */
@@ -18,14 +18,17 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'akuru', sans-serif;
+    font-family: 'inter', sans-serif;
     background-color: var(--primary);
     color: var(--secundary);
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -132,7 +135,7 @@ body {
 }
 
 .hero-image a {
-    text-align: right;
+    text-align: right;  
     color: inherit;
     text-decoration: none;
     font-size: 10px;
@@ -206,6 +209,7 @@ body {
 
 .profile p {
     width: calc(100% - 350px - 20px);
+    text-align: justify;
 }
 
 .site {
@@ -445,6 +449,8 @@ body {
     cursor: pointer;
 }
 
+
+
 @media only screen and (max-width: 635px) {
     * {
         margin: 0;
@@ -651,25 +657,25 @@ body {
     }
 }
 
-@media only screen and (max-width: 880px){
     .profile img{
-        width: 150px;
-        height:150px;
+        width: 270px;
+        height: 270px;
         border-radius: 45%;
         border: .5px solid var(--secundary);
     }
 
     #sobre h2{
-        font-size: 40spx;
+        font-size: 20px;
         text-align: center;
     }
 
     .profile p {
-        width: 100%; /* Deixa o parágrafo ocupar toda a largura disponível */
-        padding-left: 25px;
-        font-size: 10px; /* Reduz o tamanho da fonte */
+        width: 80%; /* Deixa o parágrafo ocupar toda a largura disponível */
+        padding-left: 30px;
+        font-size: 25px; /* Reduz o tamanho da fonte */
+        text-align: justify;
+    padding-right: 30px;
     }
-}
 
 @media only screen and (max-width: 430px){
     .profile img{
@@ -679,7 +685,7 @@ body {
     .profile p {
         width: 80%; /* Deixa o parágrafo ocupar toda a largura disponível */
         padding-left: 25px;
-        font-size: 6.4px; /* Reduz o tamanho da fonte */
+        font-size: 9.4px; /* Reduz o tamanho da fonte */
     }
 
     .projects {
