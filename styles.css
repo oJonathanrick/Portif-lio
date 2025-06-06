@@ -533,7 +533,7 @@ body {
         margin-bottom: 15px;
     }
     .digitando {
-        width: 115px;
+        width: 120px;
         animation: digitando 3s steps(37), blink .4s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
