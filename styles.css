@@ -533,7 +533,7 @@ body {
         margin-bottom: 15px;
     }
     .digitando {
-        width: 135px;
+        width: 130px;
         animation: digitando 3s steps(37), blink .4s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
@@ -753,5 +753,14 @@ body {
 
     #projeto h2{
         font-size: 2px;
+    }
+
+    .about-info{
+        padding: 0px;
+    }
+
+    .about-info p{
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 }
